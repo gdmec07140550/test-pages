@@ -4,9 +4,10 @@
   "description": "A simple project for Cloudflare Pages deployment",
   "main": "index.html",
   "scripts": {
+    "start": "serve ./public",
     "dev": "serve ./public",
-    "build": "echo 'No build step required'",
-    "preview": "echo 'Preview server would start here'"
+    "build": "node build.js",
+    "preview": "serve ./public"
   },
   "keywords": [
     "cloudflare",
@@ -14,5 +15,9 @@
     "static-site"
   ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "dependencies": {}
 }

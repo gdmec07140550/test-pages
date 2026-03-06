@@ -2,13 +2,38 @@
 
 This is a simple static website ready for deployment on Cloudflare Pages.
 
-## Deployment Instructions
+## Development
 
-1. Connect your GitHub/GitLab repository to Cloudflare Pages
-2. Select this directory as your project root
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Build the project:
+   ```bash
+   npm run build
+   ```
+
+3. Preview locally:
+   ```bash
+   npm run preview
+   ```
+   
+   or
+   
+   ```bash
+   npm run dev
+   ```
+
+## Deployment to Cloudflare Pages
+
+1. Push this repository to GitHub/GitLab/Bitbucket
+2. Connect your repository to Cloudflare Pages
 3. Set build configuration:
-   - Build command: `npm run build` (if applicable)
-   - Build output directory: `dist` (or `public`)
-   - Environment: Your preferred framework
+   - Build command: `npm run build`
+   - Build output directory: `public`
+   - Environment: `npm` (or your Node.js environment)
 
-For static sites like this one, Cloudflare Pages can serve files directly without a build step.# test-pages
+4. Click "Save and Deploy"
+
+Your site will be automatically built and deployed to Cloudflare's global network!

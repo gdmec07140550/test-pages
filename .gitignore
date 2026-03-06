@@ -1,0 +1,147 @@
+### IntelliJ project files ###
+.idea/
+.run/
+*.iml
+out
+gen
+### Go template ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+ vendor/
+
+### macOS template ###
+# General
+**/.DS_Store
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### vscode ###
+.vscode/
+
+### CMake ###
+cmake-build-*/
+
+
+### go workspace ###
+go.work
+go.work.sum
+
+
+### gf ###
+.buildpath
+.hgignore.swp
+.project
+.orig
+.swp
+.settings/
+gf
+hack/gfcli/gf
+hack/gfcli/*.tar.gz
+
+
+### yapi import ###
+yapiImport/*
+yapi-import.json
+**/*yapiImportResult.json
+
+# docker build cache
+build-cache/
+
+
+### project ###
+
+#### binary && tmp ####
+tmp/
+**/tmp/
+tmp.yaml
+bin/
+**/bin/
+binx/
+main
+main.exe
+app
+app.exe
+layout-goframe
+layout-goframe.exe
+stickerbuddy-goframe
+stickerbuddy-goframe.exe
+output/
+**/output/
+
+!**/.gitkeep
+
+# air 项目热重启
+.air.toml
+
+#### project files ####
+.scannerwork/
+# env
+.env
+.env.*
+node_modules/
+**/*.log
+# 本地配置文件
+manifest/config/config.yaml
+manifest/config/migrate_config.yaml
+manifest/config/*.local.yaml
+# wire
+**/wire_gen.go
+# gf enums
+internal/boot/boot_enums.go
+**/boot_enums.go
+# gf pack - 打包资源
+internal/packed/build_pack_data.go
+internal/packed/build*.go
+# gf service
+internal/service/*.go
+# gorm/gen test
+tests/gormgen/dal/
+internal/dal/query/gen_test.db
+**/generated/generated.go
+internal/logic/logic.go
+tests/gormgen/config_model_handle.go
+tests/gormgen/gen_options/config_model_handle.go
+**/*local_test.go
+
+#### cret ####
+# 第三方密钥文件
+#resource/cret
+
+### AI ###
+.trae/
+.sisyphus/
